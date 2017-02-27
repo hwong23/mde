@@ -1,0 +1,21 @@
+grammar org.xtext.grupox.Teamwork with org.eclipse.xtext.common.Terminals
+generate teamwork "http://www.xtext.org/grupox/Teamwork"
+
+
+Teamwork:
+	(elements+=Project)*;
+
+
+Project:
+	Header | Task;
+
+	
+
+Task:
+	INT';'STRING;
+	
+
+Header:
+	STRING
+;
+

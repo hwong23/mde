@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.grupox.teamwork
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.grupox.teamwork; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.xtext.grupox.scoping,
+ org.xtext.grupox,
+ org.xtext.grupox.services,
+ org.xtext.grupox.teamwork.util,
+ org.xtext.grupox.validation,
+ org.xtext.grupox.serializer,
+ org.xtext.grupox.parser.antlr,
+ org.xtext.grupox.teamwork.impl,
+ org.xtext.grupox.generator,
+ org.xtext.grupox.teamwork,
+ org.xtext.grupox.parser.antlr.internal
+Import-Package: org.apache.log4j
